@@ -38,5 +38,10 @@ namespace COMP123_M2020_FinalExam
         {
             Application.Exit();
         }
+
+        private void FinalForm_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
