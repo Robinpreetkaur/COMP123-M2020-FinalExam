@@ -9,9 +9,9 @@ namespace COMP123_M2020_FinalExam
     {
        
         
-        public string fname { get; set; }
+        public string FirstName { get; set; }
 
-        public string lname { get; set; }
+        public string LastName { get; set; }
         public string Strength { get; set; }
 
         public string Dexterity { get; set; }

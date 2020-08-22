@@ -17,11 +17,7 @@ namespace COMP123_M2020_FinalExam
             InitializeComponent();
         }
 
-        private void SplashForm_Load(object sender, EventArgs e)
-        {
-            this.SplashScreenTimer.Start();
-           
-        }
+        
 
         private void SplashScreenTimer_Tick(object sender, EventArgs e)
         {
@@ -38,6 +34,9 @@ namespace COMP123_M2020_FinalExam
 
         }
 
-       
+        private void SplashForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

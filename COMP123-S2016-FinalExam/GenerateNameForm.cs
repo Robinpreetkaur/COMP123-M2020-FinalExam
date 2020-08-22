@@ -24,10 +24,10 @@ namespace COMP123_M2020_FinalExam
         private void GenerateNames()
         {
             random = new Random();
-            int fname = random.Next(FirstNameListBox.Items.Count);
-            int lname = random.Next(LastNameListBox.Items.Count);
-            FirstNameListBox.SelectedIndex = fname;
-            LastNameListBox.SelectedIndex = lname;
+            var FirstName = random.Next(FirstNameListBox.Items.Count);
+            var LastName = random.Next(LastNameListBox.Items.Count);
+            FirstNameListBox.SelectedIndex = FirstName;
+            LastNameListBox.SelectedIndex = LastName;
             FirstNameTextBox.Text = FirstNameListBox.GetItemText(FirstNameListBox.SelectedItem);
             LastNameTextBox.Text = LastNameListBox.GetItemText(LastNameListBox.SelectedItem);
         }
@@ -41,8 +41,8 @@ namespace COMP123_M2020_FinalExam
        private void GenerateButton_Click(object sender , EventArgs e)
         {
             GenerateNames();
-            Program.character.fname = FirstNameTextBox.Text;
-            Program.character.lname = LastNameTextBox.Text;
+            Program.character.FirstName = FirstNameTextBox.Text;
+            Program.character.LastName = LastNameTextBox.Text;
 
         }
         private void NextButton_Click(object sender, EventArgs e)

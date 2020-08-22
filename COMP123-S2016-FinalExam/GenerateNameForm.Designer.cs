@@ -258,10 +258,10 @@
             // NextButton
             // 
             this.NextButton.Font = new System.Drawing.Font("Lucida Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.Location = new System.Drawing.Point(505, 528);
+            this.NextButton.Location = new System.Drawing.Point(493, 471);
             this.NextButton.Margin = new System.Windows.Forms.Padding(4);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(151, 49);
+            this.NextButton.Size = new System.Drawing.Size(151, 61);
             this.NextButton.TabIndex = 7;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;

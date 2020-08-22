@@ -48,8 +48,8 @@ namespace COMP123_M2020_FinalExam
             IntelligenceTextBox.Text = Program.character.Intelligence;
             WisdomTextBox.Text = Program.character.Wisdom;
             CharismaTextBox.Text = Program.character.Charisma;
-            FirstNameTextBox.Text = Program.character.fname;
-            LastNameTextBox.Text = Program.character.lname;
+            FirstNameTextBox.Text = Program.character.FirstName;
+            LastNameTextBox.Text = Program.character.LastName;
             RaceTextBox.Text = Program.character.Race;
         }
     }
