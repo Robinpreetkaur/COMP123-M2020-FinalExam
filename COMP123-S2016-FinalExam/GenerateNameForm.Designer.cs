@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TextBox FirstNameTextBox;
+            this.FirstNameTextBox = new System.Windows.Forms.TextBox();
             this.NameListGroupBox = new System.Windows.Forms.GroupBox();
             this.GenerateButton = new System.Windows.Forms.Button();
             this.LastNameLabel2 = new System.Windows.Forms.Label();
@@ -39,17 +39,16 @@
             this.FirstNameLabel = new System.Windows.Forms.Label();
             this.FirstNameListBox = new System.Windows.Forms.ListBox();
             this.NextButton = new System.Windows.Forms.Button();
-            FirstNameTextBox = new System.Windows.Forms.TextBox();
             this.NameListGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // FirstNameTextBox
             // 
-            FirstNameTextBox.Location = new System.Drawing.Point(9, 244);
-            FirstNameTextBox.Margin = new System.Windows.Forms.Padding(4);
-            FirstNameTextBox.Name = "FirstNameTextBox";
-            FirstNameTextBox.Size = new System.Drawing.Size(201, 31);
-            FirstNameTextBox.TabIndex = 4;
+            this.FirstNameTextBox.Location = new System.Drawing.Point(9, 244);
+            this.FirstNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.FirstNameTextBox.Name = "FirstNameTextBox";
+            this.FirstNameTextBox.Size = new System.Drawing.Size(201, 31);
+            this.FirstNameTextBox.TabIndex = 4;
             // 
             // NameListGroupBox
             // 
@@ -57,7 +56,7 @@
             this.NameListGroupBox.Controls.Add(this.LastNameLabel2);
             this.NameListGroupBox.Controls.Add(this.LastNameTextBox);
             this.NameListGroupBox.Controls.Add(this.FirstNameLabel2);
-            this.NameListGroupBox.Controls.Add(FirstNameTextBox);
+            this.NameListGroupBox.Controls.Add(this.FirstNameTextBox);
             this.NameListGroupBox.Controls.Add(this.LastNameLabel);
             this.NameListGroupBox.Controls.Add(this.LastNameListBox);
             this.NameListGroupBox.Controls.Add(this.FirstNameLabel);
@@ -298,8 +297,8 @@
         private System.Windows.Forms.Label LastNameLabel2;
         private System.Windows.Forms.TextBox LastNameTextBox;
         private System.Windows.Forms.Label FirstNameLabel2;
-        private System.Windows.Forms.TextBox FirstNameTextBox;
         protected System.Windows.Forms.Button NextButton;
         protected System.Windows.Forms.Button GenerateButton;
+        private System.Windows.Forms.TextBox FirstNameTextBox;
     }
 }

@@ -24,8 +24,8 @@ namespace COMP123_M2020_FinalExam
         private void GenerateNames()
         {
             random = new Random();
-            int fname = random.Next(0, 30);
-            int lname = random.Next(0, 30);
+            int fname = random.Next(FirstNameListBox.Items.Count);
+            int lname = random.Next(LastNameListBox.Items.Count);
             FirstNameListBox.SelectedIndex = fname;
             LastNameListBox.SelectedIndex = lname;
             FirstNameTextBox.Text = FirstNameListBox.GetItemText(FirstNameListBox.SelectedItem);
@@ -47,10 +47,22 @@ namespace COMP123_M2020_FinalExam
         }
         private void NextButton_Click(object sender, EventArgs e)
         {
-            AbilityGeneratorForm abilityGeneratorForm = new AbilityGeneratorForm();
-            abilityGeneratorForm.Show();
-            this.Hide();
             
+            // Instantiate an object for the form type
+            // you are going to next
+            AbilityGeneratorForm AbilityGeneratorForm = new AbilityGeneratorForm();
+
+           
+            //  point this form to the parent Form 
+            // property in the next form
+           AbilityGeneratorForm.previousForm = this;
+
+            // Show the next form
+            AbilityGeneratorForm.Show();
+
+            // hide the current form
+            this.Hide();
+
 
         }
 

@@ -101,5 +101,10 @@ namespace COMP123_M2020_FinalExam
             }
         }
         #endregion
+
+        private void textBoxDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

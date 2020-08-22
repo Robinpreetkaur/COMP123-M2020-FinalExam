@@ -50,5 +50,10 @@ namespace COMP123_M2020_FinalExam
             finalForm.Show();
             this.Hide();
         }
+
+        private void RaceAndClassForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

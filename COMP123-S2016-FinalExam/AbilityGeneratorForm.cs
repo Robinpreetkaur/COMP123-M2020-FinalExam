@@ -20,8 +20,7 @@ namespace COMP123_M2020_FinalExam
         private TextBox _firstAbility;
         private TextBox _secondAbility;
         private TextBox _modifiedAbility;
-
-
+        internal GenerateNameForm previousForm;
 
         public AbilityGeneratorForm()
         {
@@ -164,22 +163,20 @@ namespace COMP123_M2020_FinalExam
             character.Wisdom = WisdomTextBox.Text;
             character.Charisma = CharismaTextBox.Text;
 
-            // Step 1 - Hide the parent form
+            // Hide the parent form
             this.Hide();
 
-            // Step 2 - Instantiate an object for the form type
+            //Instantiate an object for the form type
             // you are going to next
             RaceAndClassForm raceAndClassForm = new RaceAndClassForm();
 
-            // Step 3 - create a property in the next form that 
-            // we will use to point to this form
-            // e.g. public AbilityGeneratorForm previousForm;
+         
 
-            // Step 4 - point this form to the parent Form 
+            // point this form to the parent Form 
             // property in the next form
             raceAndClassForm.previousForm = this;
 
-            // Step 5 - Show the next form
+            //  Show the next form
             raceAndClassForm.Show();
         }
     }

@@ -20,16 +20,21 @@ namespace COMP123_M2020_FinalExam
         private void SplashForm_Load(object sender, EventArgs e)
         {
             this.SplashScreenTimer.Start();
-            
+           
         }
 
         private void SplashScreenTimer_Tick(object sender, EventArgs e)
         {
-            this.SplashScreenTimer.Stop(); 
+            
             this.Hide();
-            SplashScreenTimer.Enabled = false;
-            Program.generateNameForm.Show();
 
+            // Instantiate an object for the form type
+            // you are going to next
+            GenerateNameForm GenerateNameForm= new GenerateNameForm();
+
+            
+            GenerateNameForm.Show();
+            SplashScreenTimer.Enabled = false;
 
         }
 
